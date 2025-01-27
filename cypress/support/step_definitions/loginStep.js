@@ -6,6 +6,7 @@ Given('L utilisateur est sur la page d accueil d OrangeHRM', () => {
   cy.window().then((win) => {
     win.sessionStorage.clear();
   });
+  
   cy.visit('/auth/login');
   cy.url().should('eq', Cypress.config().baseUrl + '/auth/login');
 });
