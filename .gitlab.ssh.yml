@@ -1,0 +1,4 @@
+---
+demo_jobs1:
+  tags: -ssh
+  script: -echo hello word
